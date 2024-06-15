@@ -7,3 +7,5 @@ Killer One-Liner functions collection!
 | TypeScript | Paperback / Kindle | pdf link | ⭐⭐⭐⭐⭐ |
 | Ruby | Paperback / Kindle | pdf link | ⭐⭐⭐⭐⭐ |
 | C# | Paperback / Kindle | pdf link | ⭐⭐⭐⭐⭐ |
+
+python is also done!
