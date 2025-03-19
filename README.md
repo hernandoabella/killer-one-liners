@@ -1,6 +1,6 @@
 # Killer One Liners
 Killer One-Liner functions collection!
-- Python
+- [Python](https://github.com/hernandoabella/killer-python-one-liners)
 - JavaScript
 - TypeScript
 - Ruby
