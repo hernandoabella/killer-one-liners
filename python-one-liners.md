@@ -1,4 +1,11 @@
-# 250+ Killer Python One-Liners
+| Book Cover |  Digital Book (PDF) | Physical Book |    
+|----|----|----|
+| [<img src="https://github.com/user-attachments/assets/36001965-6f05-426e-bfb8-39d14eb9090a" width="300px">](#) | [<img src="https://github.com/user-attachments/assets/9a6a1546-c29c-4a6c-815d-9150edeb74a7">](hernandoabella.gumroad.com/l/oqsrp) | [<img src="https://github.com/user-attachments/assets/3b79de6e-9469-49ee-aa48-9a283604a648">](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D442PCLX) |
+
+![GitHub Banners](https://github.com/user-attachments/assets/94bd957b-7001-4893-bd66-c3da2c37e7b9)
+
+
+---
 
 ### 1. Convert Celsius to Fahrenheit
 The celsius_to_fahrenheit function converts Celsius to Fahrenheit.
@@ -10,11 +17,6 @@ print(celsius_to_fahrenheit(25))
 # Output: 77.0°F (25°C converted to Fahrenheit)
 ```
 
-
-
-
-
- 
 2. Swap Two Variables
 The swap_without_temp function swaps the values of two variables a and b without using a temporary variable. 
 
@@ -25,13 +27,6 @@ result = swap_without_temp(5, 10)
 print(f"After swapping: a = {result[1]}, b = {result[0]}")  
 # Output: After swapping: a = 10, b = 5
 
-
-
-
-
-
-
- 
 3. Convert RGB to Hex
 The rgb_to_hex function combines the red, green, and blue (RGB) values into a single hexadecimal color code. 
 
@@ -40,14 +35,6 @@ def rgb_to_hex(r, g, b): return f"#{((r << 16) + (g << 8) + b):06X}"
 print(rgb_to_hex(0, 51, 255))  
 # Output: #0033FF
 
-
-
-
-
-
-
-
- 
 4. Transpose of a Matrix
 The transpose_matrix function computes the transpose of a given matrix. 
 
@@ -66,9 +53,6 @@ print("\n".join(", ".join(map(str, row)) for row in transpose_matrix(matrix)))
 # 2, 5, 8
 # 3, 6, 9
 
-
-
- 
 5. Check if Date is Valid
 The is_date_valid function checks if a date is valid.
 
@@ -79,12 +63,6 @@ def is_date_valid(val): return datetime.strptime(val, "%B %d, %Y %H:%M:%S") if v
 print(is_date_valid("December 17, 1995 03:24:00"))  
 # 1995-12-17 03:24:00
 
-
-
-
-
-
- 
 6. Find the Day of Year
 The day_of_year function takes a date as input and calculates the day of the year for that date. 
 
@@ -95,15 +73,6 @@ def day_of_year(date): return date.timetuple().tm_yday
 print(day_of_year(datetime(2024, 10, 1)))  
 # Output: 275
 
-
-
-
-
-
-
-
-
- 
 7. Capitalize a String
 The capitalize_string function takes a string as input and capitalizes the first character.
 
@@ -111,10 +80,6 @@ def capitalize_string(s): return s[0].upper() + s[1:] if s else ""
 
 print(capitalize_string("follow for more"))  
 # Output: Follow for more
-
-
-
-
 
   
 8. Find the Number of Days Between Two Days
@@ -130,12 +95,6 @@ date2 = datetime(2021, 10, 22)
 print(day_diff(date1, date2))  
 # Output: 367
 
-
-
-
-
-
- 
 9. Find the Frecuency of Character in a String
 The character_frequency function finds the frequency of characters in a String. 
 
@@ -143,12 +102,6 @@ def character_frequency(string): return {char: string.count(char) for char in se
 
 print(", ".join([f"{k}=>{v}" for k, v in character_frequency("hello").items()]))  
 # Output: h=>1, e=>1, l=>2, o=>1
-
-
-
-
-
-
 
  
 10. Generate Random Hex
@@ -161,12 +114,6 @@ def random_hex(): return f"#{random.randint(0, 0xFFFFFF):06X}"
 print(random_hex())
 # Output: e.g., #A58E72
 
-
-
-
-
-
- 
 11. Create Random Strings
 The random_string function generates a random String of lowercase letters with the specified length. 
 
@@ -4498,5 +4445,4 @@ def sector_area(radius, angle):
 print(f"Area of the sector: {sector_area(5, 60)}")
 # Output: Area of the sector: 5.235987755982989
 
-
-
+Made with ❤️ & ☕by [Hernando Abella](https://www.github.com/hernandoabella)
