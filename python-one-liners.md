@@ -8,7 +8,7 @@
 ---
 
 ### 1. Convert Celsius to Fahrenheit
-The celsius_to_fahrenheit function converts Celsius to Fahrenheit.
+The ```celsius_to_fahrenheit``` function converts Celsius to Fahrenheit.
 
 ```
 def celsius_to_fahrenheit(celsius): return (celsius * 9/5) + 32
@@ -17,27 +17,32 @@ print(celsius_to_fahrenheit(25))
 # Output: 77.0°F (25°C converted to Fahrenheit)
 ```
 
-2. Swap Two Variables
-The swap_without_temp function swaps the values of two variables a and b without using a temporary variable. 
+### 2. Swap Two Variables
+The ```swap_without_temp``` function swaps the values of two variables a and b without using a temporary variable. 
 
+```
 def swap_without_temp(a, b):
     return b, a
 
 result = swap_without_temp(5, 10)
 print(f"After swapping: a = {result[1]}, b = {result[0]}")  
 # Output: After swapping: a = 10, b = 5
+```
 
-3. Convert RGB to Hex
-The rgb_to_hex function combines the red, green, and blue (RGB) values into a single hexadecimal color code. 
+### 3. Convert RGB to Hex
+The ```rgb_to_hex``` function combines the red, green, and blue (RGB) values into a single hexadecimal color code. 
 
+```
 def rgb_to_hex(r, g, b): return f"#{((r << 16) + (g << 8) + b):06X}"
 
 print(rgb_to_hex(0, 51, 255))  
 # Output: #0033FF
+```
 
-4. Transpose of a Matrix
+### 4. Transpose of a Matrix
 The transpose_matrix function computes the transpose of a given matrix. 
 
+```
 def transpose_matrix(matrix):
     return [list(row) for row in zip(*matrix)]
 
@@ -52,39 +57,46 @@ print("\n".join(", ".join(map(str, row)) for row in transpose_matrix(matrix)))
 # 1, 4, 7
 # 2, 5, 8
 # 3, 6, 9
+```
 
-5. Check if Date is Valid
+### 5. Check if Date is Valid
 The is_date_valid function checks if a date is valid.
 
+```
 from datetime import datetime
 
 def is_date_valid(val): return datetime.strptime(val, "%B %d, %Y %H:%M:%S") if val else False
 
 print(is_date_valid("December 17, 1995 03:24:00"))  
 # 1995-12-17 03:24:00
+```
 
-6. Find the Day of Year
+### 6. Find the Day of Year
 The day_of_year function takes a date as input and calculates the day of the year for that date. 
 
+```
 from datetime import datetime
 
 def day_of_year(date): return date.timetuple().tm_yday
 
 print(day_of_year(datetime(2024, 10, 1)))  
 # Output: 275
+```
 
-7. Capitalize a String
-The capitalize_string function takes a string as input and capitalizes the first character.
+### 7. Capitalize a String
+The ```capitalize_string``` function takes a string as input and capitalizes the first character.
 
+```
 def capitalize_string(s): return s[0].upper() + s[1:] if s else ""
 
 print(capitalize_string("follow for more"))  
 # Output: Follow for more
-
+```
   
-8. Find the Number of Days Between Two Days
-The day_diff function finds the number of days between two days.
+### 8. Find the Number of Days Between Two Days
+The ```day_diff``` function finds the number of days between two days.
 
+```
 from datetime import datetime
 
 def day_diff(date1, date2): return abs((date2 - date1).days) + 1
@@ -94,29 +106,34 @@ date2 = datetime(2021, 10, 22)
 
 print(day_diff(date1, date2))  
 # Output: 367
+```
 
-9. Find the Frecuency of Character in a String
+### 9. Find the Frecuency of Character in a String
 The character_frequency function finds the frequency of characters in a String. 
 
+```
 def character_frequency(string): return {char: string.count(char) for char in set(string)}
 
 print(", ".join([f"{k}=>{v}" for k, v in character_frequency("hello").items()]))  
 # Output: h=>1, e=>1, l=>2, o=>1
-
+```
  
-10. Generate Random Hex
-The random_hex function generates a random integer between 0 and 16777215 (0xffffff in hexadecimal).
+### 10. Generate Random Hex
+The ```random_hex``` function generates a random integer between 0 and 16777215 (0xffffff in hexadecimal).
 
+```
 import random
 
 def random_hex(): return f"#{random.randint(0, 0xFFFFFF):06X}"
 
 print(random_hex())
 # Output: e.g., #A58E72
+```
 
-11. Create Random Strings
+### 11. Create Random Strings
 The random_string function generates a random String of lowercase letters with the specified length. 
 
+```
 import random
 import string
 
@@ -124,16 +141,12 @@ def random_string(length): return ''.join(random.choice(string.ascii_lowercase) 
 
 print(random_string(10))
 # Output: e.g., bjmfpwmoqi
+```
 
+### 12. Find the Odd Occurrence
+The ```find_odd``` function finds the integer which appears an odd number of times in a given list of integers.
 
-
-
-
-
- 
-12. Find the Odd Occurrence
-The find_odd function finds the integer which appears an odd number of times in a given list of integers.
-
+```
 import random
 import functools
 
@@ -146,44 +159,33 @@ print("Result:", find_odd(ar))
 
 # Input: 25 32 37 63 66 6 4 26 2 38 59 1 30
 # Result: 121
+```
 
+### 13. Check if a Number is Even or Odd
+The ```is_even``` function checks whether a given number is even or odd.
 
-
-
-
-
-
-
- 
-13. Check if a Number is Even or Odd
-The is_even function checks whether a given number is even or odd.
-
+```
 def is_even(num): return num % 2 == 0
 
 print(is_even(2))  
 # Output: True
-
-
-
-
-
+```
  
-14. Simple Sum
-The addition function takes two numbers as input and returns their sum.
+### 14. Simple Sum
+The ```addition``` function takes two numbers as input and returns their sum.
 
+```
 def addition(a, b): return a + b
 
 result = addition(5, 3)
 print(result) 
 # Output: 8
-
-
-
-
+```
  
-15. Pyramid Pattern
-The create_pyramid function takes the number of rows as an argument and returns an array representing the pyramid pattern. 
+### 15. Pyramid Pattern
+The ```create_pyramid``` function takes the number of rows as an argument and returns an array representing the pyramid pattern. 
 
+```
 def create_pyramid(rows):
     return [f"{' ' * (rows - i)}{'*' * (2 * i - 1)}" for i in range(1, rows + 1)]
 
@@ -197,39 +199,32 @@ for row in pyramid:
  *******
 *********
 """
-
-
+```
  
-16. Reverse a String
-The reverse function takes a string as input and returns a new string with the characters in reverse order. 
+### 16. Reverse a String
+The ```reverse``` function takes a string as input and returns a new string with the characters in reverse order. 
 
+```
 def reverse(string): return string[::-1]
 
 print(reverse("hello world"))  
 # Output: dlrow olleh
+```
 
+### 17. Check If Array is Empty
+The ```is_not_empty``` function checks if an array is not empty. 
 
-
-
-
- 
-17. Check If Array is Empty
-The is_not_empty function checks if an array is not empty. 
-
+```
 def is_not_empty(arr): return isinstance(arr, list) and len(arr) > 0
 
 print(is_not_empty([1, 2, 3]))  
 # Output: True
+```
 
+### 18. Matchstick Count in Steps
+The ```match_houses``` function calculates the total number of matchsticks required based on the number of steps provided.
 
-
-
-
-
- 
-18. Matchstick Count in Steps
-The match_houses function calculates the total number of matchsticks required based on the number of steps provided.
-
+```
 def match_houses(steps): return steps * 6 - (steps - 1) if steps > 0 else 0
 
 print(match_houses(1))  
@@ -238,15 +233,12 @@ print(match_houses(4))
 # Output: 21
 print(match_houses(0))  
 # Output: 0
+```
 
+### 19. Shuffle an Array
+The ```shuffle_array``` function randomly shuffles the elements of a given array.
 
-
-
-
- 
-19. Shuffle an Array
-The shuffle_array function randomly shuffles the elements of a given array.
-
+```
 import random
 
 def shuffle_array(arr): 
@@ -256,14 +248,10 @@ def shuffle_array(arr):
 
 print(", ".join(map(str, shuffle_array([1, 2, 3, 4]))))
 # Output: e.g., 4, 2, 3, 1
+```
 
-
-
-
-
- 
-20. Validate Vowel Sandwich
-The is_vowel_sandwich function validates whether a 3-character string is a vowel sandwich.
+### 20. Validate Vowel Sandwich
+The ```is_vowel_sandwich``` function validates whether a 3-character string is a vowel sandwich.
 
 def is_vowel_sandwich(string): return len(string) == 3 and string[0] not in 'aeiou' and string[1] in 'aeiou' and string[2] not in 'aeiou'
 
