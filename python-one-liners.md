@@ -262,84 +262,65 @@ print(is_vowel_sandwich("cat"))
 print(is_vowel_sandwich("dog"))  
 # Output: False
 
-
-
-
-
-
- 
-21. Count True Values in Boolean Array
+### 21. Count True Values in Boolean Array
 The count_true function counts the number of true values in a boolean array.
 
+```
 def count_true(lst): return sum(1 for x in lst if x)
 
 bool_array = [True, False, True, False, True]
 count = count_true(bool_array)
 print("Number of true values:", count)  
 # Output: Number of true values: 3
+```
 
-
-
-
-
-
- 
-22. Get the Length of a String
+### 22. Get the Length of a String
 The get_length function returns the number of characters in the given string.
 
+```
 def get_length(string): return len(string)
 
 print(get_length("Hello, world!"))  
 # Output: 13
+```
 
-
-
-
- 
-23. Calculate the Area of a Circle
+### 23. Calculate the Area of a Circle
 The calculate_circle_area function calculates the area of a circle given its radius.
 
+```
 import math
 
 def calculate_circle_area(radius): return math.pi * radius ** 2
 
 print(calculate_circle_area(5))  
 # Output: 78.53981633974483
+```
 
-
-
- 
-24. Move Capital Letters to Front
+### 24. Move Capital Letters to Front
 The cap_to_front function moves all capital letters in a word to the front of the word, preserving their original order, and followed by the lowercase letters.
 
+```
 def cap_to_front(s): return ''.join(filter(str.isupper, s)) + ''.join(filter(str.islower, s))
 
 print(cap_to_front("MoveCapitalLettersToFront"))  
 # Output: MCLFoveapitalettersoront
+```
 
-
-
-
-
-  
- 
-25. Check if an Array is Special
+### 25. Check if an Array is Special
 The is_special_array function determines whether an array is special, where every even index contains an even number and every odd index contains an odd number.
 
+```
 def is_special_array(arr): return all(arr[i] % 2 == i % 2 for i in range(len(arr)))
 
 arr = [2, 3, 6, 8, 9]
 print(is_special_array(arr))  
 # Output: False
+```
 
-
-
-
-
- 
-26. Validate Number Within Bounds
+### 26. Validate Number Within Bounds
 The int_within_bounds function validates whether a number n is exclusively within the bounds of lower and upper.
 
+```
 def int_within_bounds(n, lower, upper): return lower <= n < upper and n % 1 == 0
 
 print(int_within_bounds(10, 5, 20))  
@@ -348,30 +329,24 @@ print(int_within_bounds(5, 5, 20))
 # Output: False
 print(int_within_bounds(21, 5, 20))  
 # Output: False
+```
 
-
-
-
-
-
- 
-27. Generate a Random Number within a Range
+### 27. Generate a Random Number within a Range
 The random_in_range function generates a random number within the specified range.
 
+```
 import random
 
 def random_in_range(min_val, max_val): return random.randint(min_val, max_val)
 
 print(random_in_range(1, 10))  
 # Output: e.g., 6
+```
 
-
-
-
- 
-28. Convert Seconds to HH:MM:SS Format
+### 28. Convert Seconds to HH:MM:SS Format
 The seconds_to_hhmmss function converts the given number of seconds into the HH:MM:SS format.
 
+```
 def seconds_to_hhmmss(seconds):
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
@@ -380,280 +355,219 @@ def seconds_to_hhmmss(seconds):
 
 print(seconds_to_hhmmss(3660))  
 # Output: 01:01:00
-
-
-
-
-
-  
+```
  
-29. Get the Last Element of an Array
+### 29. Get the Last Element of an Array
 The get_last_element function retrieves the last element of the given array.
 
+```
 def get_last_element(arr): return arr[-1]
 
 print(get_last_element([1, 2, 3, 4]))  
 # Output: 4
+```
 
-
-
-
- 
-30. Jazzify Chords
+### 30. Jazzify Chords
 The jazzified_arr function appends the number 7 to the end of every chord in an array. It ignores all chords that already end with 7.
 
+```
 def jazzify(arr): return [x if str(x)[-1] == '7' else x + 7 for x in arr]
 
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 jazzified_arr = jazzify(arr)
 print(", ".join(map(str, jazzified_arr)))
 # Output: 8, 9, 10, 11, 12, 13, 7, 15, 16
+```
 
-
-
-
- 
-31. Check if All Elements in an Array are the Same
+### 31. Check if All Elements in an Array are the Same
 The test_jackpot function takes in a string representing the result of a jackpot game and returns true if all elements in the string are the same, indicating a jackpot, and false otherwise.
 
+```
 def test_jackpot(result): return len(set(result)) == 1
 
 result = "22222"
 print(test_jackpot(result))  
 # Output: True
+```
 
-
-
-
-
- 
-32. Sum of Numbers up to a Given Number
+### 32. Sum of Numbers up to a Given Number
 The add_up function calculates the sum of all numbers from 1 to the number passed to the function in C#.
 
+```
 def add_up(num): return num * (num + 1) // 2
 
 print(add_up(5))  
 # Output: 15
-
-
-
-
-  
+```
  
-33. Sum all Numbers in an Array
+### 33. Sum all Numbers in an Array
 The sum_array function calculates the sum of all numbers in a given array.
 
+```
 def sum_array(arr): return sum(arr)
 
 print(sum_array([1, 2, 3, 4, 5]))  
 # Output: 15
-
-
-
-
-
+```
  
-34. Find the Maximum Value in an Array
+### 34. Find the Maximum Value in an Array
 The find_max function finds the maximum value in a given array.
 .
+```
 def find_max(arr): return max(arr)
 
 print(find_max([10, 5, 8, 20, 3]))  
 # Output: 20
+```
 
-
-
-
-
- 
-35. Get the Current Date in DD/MM/YYYY Format
+### 35. Get the Current Date in DD/MM/YYYY Format
 The get_current_date function returns the current date in the format "DD/MM/YYYY".
 
+```
 from datetime import datetime
 
 def get_current_date(): return datetime.now().strftime("%d/%m/%Y")
 
 print(get_current_date())  
 # Output: e.g., 16/04/2024
+```
 
-
-
-
-
-
-  
- 
-36. Calculate the Power of a Number
+### 36. Calculate the Power of a Number
 The power function calculates the power of a given base raised to the specified exponent.
 
+```
 def power(base, exponent): return base ** exponent
 
 print(power(2, 5))  
 # Output: 32.0
+```
 
-
-
-
-
- 
-37. Convert String to Number
+### 37. Convert String to Number
 The string_to_number function converts a string to a floating-point number.
 
+```
 def string_to_number(string): return float(string)
 
 print(string_to_number("3.14"))  
 # Output: 3.14
+```
 
-
-	
-
-
- 
-38. Marathon Distance Checker
+### 38. Marathon Distance Checker
 The marathon_distance function helps Mary determine if the marathon she wants to run is exactly 25 miles long by analyzing the lengths listed in small portions on the sign-up sheet. It returns true if the total distance matches 25 miles, otherwise, it returns false.
 
+```
 def marathon_distance(distances): return sum(map(abs, distances)) == 25
 
 distances = [1, 2, -3, 4, 5, -6, 7, 8, -9, 10]
 print(marathon_distance(distances))  
 # Output: False
+```
 
-
-
-
-  
- 
-39. Count the Number of Words in a String
+### 39. Count the Number of Words in a String
 The count_words function counts the number of words in a given string.
 
+```
 def count_words(string): return len(string.split())
 
 print(count_words("Hello world, how are you?"))  
 # Output: 5
-
-
-
-
-
-
-
+```
  
-40. Count Ones in Binary Representation
+### 40. Count Ones in Binary Representation
 The count_ones function counts the number of ones in the binary representation of an integer.
 
+```
 def count_ones(n): return bin(n).count('1')
 
 result = count_ones(12)
 print(result)  
 # Output: 2
-
-
-
-
-
-
+```
  
-41. Get the Current Year
+### 41. Get the Current Year
 The current_year function returns the current year as an integer. 
 
+```
 from datetime import datetime
 
 def current_year(): return datetime.now().year
 
 print(current_year())  
 # Output: e.g., 2024
+```
 
-
-
-
-
- 
-42. Generate a Random Number between 1 and 10
+### 42. Generate a Random Number between 1 and 10
 The random_1_to_10 function generates a random integer between 1 and 10 (inclusive) using the rand method with a range of 1 to 10.
 
+```
 import random
 
 def random_1_to_10(): return random.randint(1, 10)
 
 print(random_1_to_10())  
 # Output: e.g., 8
-
-
-
-
-
+```
  
-43. Check if a String is Empty
+### 43. Check if a String is Empty
 The empty_string function checks if a string is empty.
 
+```
 def empty_string(string): return not string.strip()
 
 print(empty_string(""))  
 # Output: True
 print(empty_string("Hello, world!"))  
 # Output: False
+```
 
-
-
-
-
- 
-44. Sum of Index Multiplied Elements
+### 44. Sum of Index Multiplied Elements
 The index_multiplier function calculates the sum of all items in an array, where each item is multiplied by its index (zero-based). If the array is empty, it returns 0.
 
+```
 def index_multiplier(arr): return sum(value * index for index, value in enumerate(arr))
 
 arr = [1, 2, 3, 4, 5]
 print(index_multiplier(arr))  
 # Output: 40
+```
 
-
-
- 
-45. Calculate Progress Days
+### 45. Calculate Progress Days
 The progress_days function calculates the total number of progress days based on an array of miles run every Saturday.
 
+```
 def progress_days(runs): return sum(runs[i] < runs[i + 1] for i in range(len(runs) - 1))
 
 runs = [3, 4, 1, 2, 4, 5]
 print(progress_days(runs))  
 # Output: 3
+```
 
-
-
-
-
-
- 
-46. Check if a Number is a Multiple of 5
+### 46. Check if a Number is a Multiple of 5
 The is_multiple_of_5 function checks if a given number is a multiple of 5. 
 
+```
 def is_multiple_of_5(num): return num % 5 == 0
 
 print(is_multiple_of_5(10))  
 # Output: True
 print(is_multiple_of_5(7))   
 # Output: False
-
-
-
-
+```
  
-47. Convert Minutes to Seconds
+### 47. Convert Minutes to Seconds
 The mins_to_secs convert minutes to seconds. It takes a number representing minutes (mins) as input and returns the equivalent number of seconds by multiplying the number of minutes by 60.
 
+```
 def mins_to_secs(mins): return mins * 60
 
 print(mins_to_secs(5))  
 # Output: 300
-
-
-
-
+```
  
-48. Find the Maximum Value in an Array of Objects
+### 48. Find the Maximum Value in an Array of Objects
 The FindMaxValue function finds the maximum value in an array of objects.
 
+```
 def find_max_value(arr, key):
     return max(item[key] for item in arr)
 
@@ -666,14 +580,12 @@ arr = [
 
 print(find_max_value(arr, "score"))  
 # Output: 95
+```
 
-
-
-
- 
-49. Check if a String starts with a specific character
+### 49. Check if a String starts with a specific character
 The starts_with_char function checks if a given string starts with a specific character.
 
+```
 def starts_with_char(string, char):
     return string.lower().startswith(char.lower())
 
@@ -681,29 +593,24 @@ print(starts_with_char("Hello, world!", 'H'))
 # Output: True
 print(starts_with_char("Hello, world!", 'h'))  
 # Output: True
-
-
-
-
+```
  
-50. Convert DNA to RNA
+### 50. Convert DNA to RNA
 The dna_to_rna function takes a DNA sequence as input and converts it into its corresponding RNA sequence.
 
+```
 def dna_to_rna(dna):
     conversion = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
     return ''.join(conversion.get(base, '') for base in dna)
 
 print(dna_to_rna("ATTGC"))  
 # Output: UAAAC
+```
 
-
-
-
-
- 
-51. Check if an array contains a specific value
+### 51. Check if an array contains a specific value
 The contains_value function checks if a given array contains a specific value.
 
+```
 def contains_value(arr, value):
     return value in arr
 
@@ -712,31 +619,24 @@ print(contains_value([1, 2, 3, 4, 5], 3))
 # Output: True
 print(contains_value([1, 2, 3, 4, 5], 6))  
 # Output: False
+```
 
-
-
-
- 
-52. Convert an array to a comma-separated string
+### 52. Convert an array to a comma-separated string
 The array_to_csv function converts an array to a comma-separated string. 
 
+```
 def array_to_csv(arr):
     return ', '.join(map(str, arr))
 
 # Example usage
 print(array_to_csv([1, 2, 3, 4, 5]))  
 # Output: 1, 2, 3, 4, 5
-
-
-
-
-
-
-
+```
  
-53. Check if a Year is a Leap Year
+### 53. Check if a Year is a Leap Year
 The is_leap_year function takes a year as input and returns true if it's a leap year and false otherwise.
 
+```
 def is_leap_year(year):
     return (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
 
@@ -745,14 +645,12 @@ print(is_leap_year(2024))
 # Output: True
 print(is_leap_year(2023))  
 # Output: False
+```
 
-
-
-
- 
-54. Find the Index of an Element in an Array
+### 54. Find the Index of an Element in an Array
 The find_index function finds the index of an element in an array.
 
+```
 def find_index(arr, element):
     try:
         return arr.index(element)
@@ -763,30 +661,24 @@ def find_index(arr, element):
 fruits = ["apple", "banana", "orange", "grape"]
 print(find_index(fruits, "orange"))  
 # Output: 2
-
-
-
-
-
+```
  
-55. Convert Minutes to Hours and Minutes
+### 55. Convert Minutes to Hours and Minutes
 The mins_to_hours_and_mins function convert minutes to hours and minutes.
 
+```
 def mins_to_hours_and_mins(mins):
     return f"{mins // 60} hours and {mins % 60} minutes"
 
 # Example usage
 print(mins_to_hours_and_mins(150))
 # Output: 2 hours and 30 minutes
+```
 
-
-
-
-  
- 
-56. Check if an Array is Sorted in Ascending Order
+### 56. Check if an Array is Sorted in Ascending Order
 The is_sorted_ascending function takes an array arr as input and checks if every element in the array is greater than or equal to the previous element, ensuring that the array is sorted in ascending order. 
 
+```
 def is_sorted_ascending(arr):
     return all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1))
 
@@ -795,14 +687,12 @@ print(is_sorted_ascending([1, 2, 3, 5, 8]))
 # Output: True
 print(is_sorted_ascending([1, 5, 3, 8, 2]))
 # Output: False
+```
 
-
-
-
- 
-57. Remove a Specific Element from an Array
+### 57. Remove a Specific Element from an Array
 The remove_element function removes a specific element from an array.
 
+```
 def remove_element(arr, element):
     return [x for x in arr if x != element]
 
@@ -810,43 +700,36 @@ def remove_element(arr, element):
 result = remove_element([1, 2, 3, 4, 5], 3)
 print(result)
 # Output: [1, 2, 4, 5]
+```
 
-
-
-
- 
-58. Truncate a String to a Given Length
+### 58. Truncate a String to a Given Length
 The truncate_string function truncate a string to a given length. 
 
+```
 def truncate_string(s, max_length):
     return s[:max_length] + '...' if len(s) > max_length else s
 
 # Example usage
 print(truncate_string("Hello, world!", 5))
 # Output: Hello...
+```
 
-
-
-
- 
-59. Convert Video Length from Minutes to Seconds
+### 59. Convert Video Length from Minutes to Seconds
 The minutes_to_seconds function takes the length of a video in the format "mm:ss" and converts it into seconds.
 
+```
 def minutes_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(time.split(':'))))
 
 # Example usage
 print(minutes_to_seconds("02:54"))
 # Output: 174
-
-
-
-
-
+```
  
-60. Find the Difference between Two Dates in Days
+### 60. Find the Difference between Two Dates in Days
 The DateDifferenceInDays function finds the difference between two dates in days.
 
+```
 from datetime import datetime
 
 def DateDifferenceInDays(date1, date2):
@@ -857,12 +740,8 @@ startDate = datetime(2023, 8, 1)
 endDate = datetime(2023, 8, 10)
 print(DateDifferenceInDays(startDate, endDate))
 # Output: 9
+```
 
-
-
-
-
- 
 61. Check if a String is a Valid Email Address
 The IsValidEmail function returns true if the email string matches the pattern, and false otherwise.
 
