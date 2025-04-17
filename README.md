@@ -1,5 +1,6 @@
-# Killer One Liners
-Killer One-Liner functions collection!
+![GitHub Banners](https://github.com/user-attachments/assets/f6359ce2-70b0-4f9b-ae01-d0fa94f832a9)
+
+### Select your language:
 - [Python](./python-one-liners.md)
 - [JavaScript](./javascript-one-liners.md)
 - [TypeScript](./typescript-one-liners.md)
