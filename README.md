@@ -1,4 +1,4 @@
-![GitHub Banners](https://github.com/user-attachments/assets/f6359ce2-70b0-4f9b-ae01-d0fa94f832a9)
+![GitHub Banners (7)](https://github.com/user-attachments/assets/ac85694c-779a-4d4f-ae22-3c2db82c5c81)
 
 ### Select your language:
 - [Python](./python-one-liners.md)
