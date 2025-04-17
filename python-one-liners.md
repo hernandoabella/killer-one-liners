@@ -2,8 +2,7 @@
 |----|----|----|
 | [<img src="https://github.com/user-attachments/assets/a1f5a77b-4d99-4341-b986-ec385927bdfd" width="300px">](#) | [<img src="https://github.com/user-attachments/assets/9a6a1546-c29c-4a6c-815d-9150edeb74a7">](hernandoabella.gumroad.com/l/oqsrp) | [<img src="https://github.com/user-attachments/assets/3b79de6e-9469-49ee-aa48-9a283604a648">](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D442PCLX) |
 
-![GitHub Banners](https://github.com/user-attachments/assets/435e09ca-c524-42e8-9dd9-5eaafddf4edf)
-
+![GitHub Banners (1)](https://github.com/user-attachments/assets/1a0b2d96-4821-4213-93ef-af846e1152fc)
 
 ---
 
