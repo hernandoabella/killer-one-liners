@@ -9,7 +9,7 @@
 ### 1. Convert Celsius to Fahrenheit
 The ```celsius_to_fahrenheit``` function converts Celsius to Fahrenheit.
 
-```
+```python
 def celsius_to_fahrenheit(celsius): return (celsius * 9/5) + 32
 
 print(celsius_to_fahrenheit(25)) 
