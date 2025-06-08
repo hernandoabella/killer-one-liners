@@ -2,8 +2,6 @@
 |----|----|----|
 | [<img src="https://github.com/user-attachments/assets/a1f5a77b-4d99-4341-b986-ec385927bdfd" width="300px">](#) | [<img src="https://github.com/user-attachments/assets/9a6a1546-c29c-4a6c-815d-9150edeb74a7">](hernandoabella.gumroad.com/l/oqsrp) | [<img src="https://github.com/user-attachments/assets/3b79de6e-9469-49ee-aa48-9a283604a648">](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D442PCLX) |
 
-![GitHub Banners (1)](https://github.com/user-attachments/assets/1a0b2d96-4821-4213-93ef-af846e1152fc)
-
 ---
 
 ### 1. Convert Celsius to Fahrenheit
@@ -19,7 +17,7 @@ print(celsius_to_fahrenheit(25))
 ### 2. Swap Two Variables
 The ```swap_without_temp``` function swaps the values of two variables a and b without using a temporary variable. 
 
-```
+```python
 def swap_without_temp(a, b):
     return b, a
 
@@ -31,7 +29,7 @@ print(f"After swapping: a = {result[1]}, b = {result[0]}")
 ### 3. Convert RGB to Hex
 The ```rgb_to_hex``` function combines the red, green, and blue (RGB) values into a single hexadecimal color code. 
 
-```
+```python
 def rgb_to_hex(r, g, b): return f"#{((r << 16) + (g << 8) + b):06X}"
 
 print(rgb_to_hex(0, 51, 255))  
@@ -41,7 +39,7 @@ print(rgb_to_hex(0, 51, 255))
 ### 4. Transpose of a Matrix
 The transpose_matrix function computes the transpose of a given matrix. 
 
-```
+```python
 def transpose_matrix(matrix):
     return [list(row) for row in zip(*matrix)]
 
@@ -61,7 +59,7 @@ print("\n".join(", ".join(map(str, row)) for row in transpose_matrix(matrix)))
 ### 5. Check if Date is Valid
 The is_date_valid function checks if a date is valid.
 
-```
+```python
 from datetime import datetime
 
 def is_date_valid(val): return datetime.strptime(val, "%B %d, %Y %H:%M:%S") if val else False
@@ -73,7 +71,7 @@ print(is_date_valid("December 17, 1995 03:24:00"))
 ### 6. Find the Day of Year
 The day_of_year function takes a date as input and calculates the day of the year for that date. 
 
-```
+```python
 from datetime import datetime
 
 def day_of_year(date): return date.timetuple().tm_yday
@@ -85,7 +83,7 @@ print(day_of_year(datetime(2024, 10, 1)))
 ### 7. Capitalize a String
 The ```capitalize_string``` function takes a string as input and capitalizes the first character.
 
-```
+```python
 def capitalize_string(s): return s[0].upper() + s[1:] if s else ""
 
 print(capitalize_string("follow for more"))  
@@ -95,7 +93,7 @@ print(capitalize_string("follow for more"))
 ### 8. Find the Number of Days Between Two Days
 The ```day_diff``` function finds the number of days between two days.
 
-```
+```python
 from datetime import datetime
 
 def day_diff(date1, date2): return abs((date2 - date1).days) + 1
@@ -110,7 +108,7 @@ print(day_diff(date1, date2))
 ### 9. Find the Frecuency of Character in a String
 The ```character_frequency``` function finds the frequency of characters in a String. 
 
-```
+```python
 def character_frequency(string): return {char: string.count(char) for char in set(string)}
 
 print(", ".join([f"{k}=>{v}" for k, v in character_frequency("hello").items()]))  
@@ -120,7 +118,7 @@ print(", ".join([f"{k}=>{v}" for k, v in character_frequency("hello").items()]))
 ### 10. Generate Random Hex
 The ```random_hex``` function generates a random integer between 0 and 16777215 (0xffffff in hexadecimal).
 
-```
+```python
 import random
 
 def random_hex(): return f"#{random.randint(0, 0xFFFFFF):06X}"
@@ -132,7 +130,7 @@ print(random_hex())
 ### 11. Create Random Strings
 The ```random_string``` function generates a random String of lowercase letters with the specified length. 
 
-```
+```python
 import random
 import string
 
@@ -145,7 +143,7 @@ print(random_string(10))
 ### 12. Find the Odd Occurrence
 The ```find_odd``` function finds the integer which appears an odd number of times in a given list of integers.
 
-```
+```python
 import random
 import functools
 
@@ -163,7 +161,7 @@ print("Result:", find_odd(ar))
 ### 13. Check if a Number is Even or Odd
 The ```is_even``` function checks whether a given number is even or odd.
 
-```
+```python
 def is_even(num): return num % 2 == 0
 
 print(is_even(2))  
@@ -173,7 +171,7 @@ print(is_even(2))
 ### 14. Simple Sum
 The ```addition``` function takes two numbers as input and returns their sum.
 
-```
+```python
 def addition(a, b): return a + b
 
 result = addition(5, 3)
@@ -184,7 +182,7 @@ print(result)
 ### 15. Pyramid Pattern
 The ```create_pyramid``` function takes the number of rows as an argument and returns an array representing the pyramid pattern. 
 
-```
+```python
 def create_pyramid(rows):
     return [f"{' ' * (rows - i)}{'*' * (2 * i - 1)}" for i in range(1, rows + 1)]
 
@@ -203,7 +201,7 @@ for row in pyramid:
 ### 16. Reverse a String
 The ```reverse``` function takes a string as input and returns a new string with the characters in reverse order. 
 
-```
+```python
 def reverse(string): return string[::-1]
 
 print(reverse("hello world"))  
@@ -213,7 +211,7 @@ print(reverse("hello world"))
 ### 17. Check If Array is Empty
 The ```is_not_empty``` function checks if an array is not empty. 
 
-```
+```python
 def is_not_empty(arr): return isinstance(arr, list) and len(arr) > 0
 
 print(is_not_empty([1, 2, 3]))  
@@ -223,7 +221,7 @@ print(is_not_empty([1, 2, 3]))
 ### 18. Matchstick Count in Steps
 The ```match_houses``` function calculates the total number of matchsticks required based on the number of steps provided.
 
-```
+```python
 def match_houses(steps): return steps * 6 - (steps - 1) if steps > 0 else 0
 
 print(match_houses(1))  
@@ -237,7 +235,7 @@ print(match_houses(0))
 ### 19. Shuffle an Array
 The ```shuffle_array``` function randomly shuffles the elements of a given array.
 
-```
+```python
 import random
 
 def shuffle_array(arr): 
@@ -252,6 +250,7 @@ print(", ".join(map(str, shuffle_array([1, 2, 3, 4]))))
 ### 20. Validate Vowel Sandwich
 The ```is_vowel_sandwich``` function validates whether a 3-character string is a vowel sandwich.
 
+```python
 def is_vowel_sandwich(string): return len(string) == 3 and string[0] not in 'aeiou' and string[1] in 'aeiou' and string[2] not in 'aeiou'
 
 print(is_vowel_sandwich("bat")) 
@@ -260,11 +259,12 @@ print(is_vowel_sandwich("cat"))
 # Output: True
 print(is_vowel_sandwich("dog"))  
 # Output: False
+```
 
 ### 21. Count True Values in Boolean Array
 The ```count_true``` function counts the number of true values in a boolean array.
 
-```
+```python
 def count_true(lst): return sum(1 for x in lst if x)
 
 bool_array = [True, False, True, False, True]
@@ -276,7 +276,7 @@ print("Number of true values:", count)
 ### 22. Get the Length of a String
 The ```get_length``` function returns the number of characters in the given string.
 
-```
+```python
 def get_length(string): return len(string)
 
 print(get_length("Hello, world!"))  
@@ -286,7 +286,7 @@ print(get_length("Hello, world!"))
 ### 23. Calculate the Area of a Circle
 The ```calculate_circle_area``` function calculates the area of a circle given its radius.
 
-```
+```python
 import math
 
 def calculate_circle_area(radius): return math.pi * radius ** 2
@@ -298,7 +298,7 @@ print(calculate_circle_area(5))
 ### 24. Move Capital Letters to Front
 The ```cap_to_front``` function moves all capital letters in a word to the front of the word, preserving their original order, and followed by the lowercase letters.
 
-```
+```python
 def cap_to_front(s): return ''.join(filter(str.isupper, s)) + ''.join(filter(str.islower, s))
 
 print(cap_to_front("MoveCapitalLettersToFront"))  
@@ -308,7 +308,7 @@ print(cap_to_front("MoveCapitalLettersToFront"))
 ### 25. Check if an Array is Special
 The ```is_special_array``` function determines whether an array is special, where every even index contains an even number and every odd index contains an odd number.
 
-```
+```python
 def is_special_array(arr): return all(arr[i] % 2 == i % 2 for i in range(len(arr)))
 
 arr = [2, 3, 6, 8, 9]
@@ -319,7 +319,7 @@ print(is_special_array(arr))
 ### 26. Validate Number Within Bounds
 The ```int_within_bounds``` function validates whether a number n is exclusively within the bounds of lower and upper.
 
-```
+```python
 def int_within_bounds(n, lower, upper): return lower <= n < upper and n % 1 == 0
 
 print(int_within_bounds(10, 5, 20))  
@@ -333,7 +333,7 @@ print(int_within_bounds(21, 5, 20))
 ### 27. Generate a Random Number within a Range
 The ```random_in_range``` function generates a random number within the specified range.
 
-```
+```python
 import random
 
 def random_in_range(min_val, max_val): return random.randint(min_val, max_val)
@@ -345,7 +345,7 @@ print(random_in_range(1, 10))
 ### 28. Convert Seconds to HH:MM:SS Format
 The ```seconds_to_hhmmss``` function converts the given number of seconds into the HH:MM:SS format.
 
-```
+```python
 def seconds_to_hhmmss(seconds):
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
@@ -359,7 +359,7 @@ print(seconds_to_hhmmss(3660))
 ### 29. Get the Last Element of an Array
 The ```get_last_element``` function retrieves the last element of the given array.
 
-```
+```python
 def get_last_element(arr): return arr[-1]
 
 print(get_last_element([1, 2, 3, 4]))  
@@ -369,7 +369,7 @@ print(get_last_element([1, 2, 3, 4]))
 ### 30. Jazzify Chords
 The ```jazzified_arr``` function appends the number 7 to the end of every chord in an array. It ignores all chords that already end with 7.
 
-```
+```python
 def jazzify(arr): return [x if str(x)[-1] == '7' else x + 7 for x in arr]
 
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -381,7 +381,7 @@ print(", ".join(map(str, jazzified_arr)))
 ### 31. Check if All Elements in an Array are the Same
 The ```test_jackpot``` function takes in a string representing the result of a jackpot game and returns true if all elements in the string are the same, indicating a jackpot, and false otherwise.
 
-```
+```python
 def test_jackpot(result): return len(set(result)) == 1
 
 result = "22222"
@@ -392,7 +392,7 @@ print(test_jackpot(result))
 ### 32. Sum of Numbers up to a Given Number
 The ```add_up``` function calculates the sum of all numbers from 1 to the number passed to the function in C#.
 
-```
+```python
 def add_up(num): return num * (num + 1) // 2
 
 print(add_up(5))  
@@ -402,7 +402,7 @@ print(add_up(5))
 ### 33. Sum all Numbers in an Array
 The ```sum_array``` function calculates the sum of all numbers in a given array.
 
-```
+```python
 def sum_array(arr): return sum(arr)
 
 print(sum_array([1, 2, 3, 4, 5]))  
@@ -411,8 +411,8 @@ print(sum_array([1, 2, 3, 4, 5]))
  
 ### 34. Find the Maximum Value in an Array
 The ```find_max``` function finds the maximum value in a given array.
-.
-```
+
+```python
 def find_max(arr): return max(arr)
 
 print(find_max([10, 5, 8, 20, 3]))  
@@ -422,7 +422,7 @@ print(find_max([10, 5, 8, 20, 3]))
 ### 35. Get the Current Date in DD/MM/YYYY Format
 The ```get_current_date``` function returns the current date in the format "DD/MM/YYYY".
 
-```
+```python
 from datetime import datetime
 
 def get_current_date(): return datetime.now().strftime("%d/%m/%Y")
@@ -434,7 +434,7 @@ print(get_current_date())
 ### 36. Calculate the Power of a Number
 The ```power``` function calculates the power of a given base raised to the specified exponent.
 
-```
+```python
 def power(base, exponent): return base ** exponent
 
 print(power(2, 5))  
@@ -444,7 +444,7 @@ print(power(2, 5))
 ### 37. Convert String to Number
 The ```string_to_number``` function converts a string to a floating-point number.
 
-```
+```python
 def string_to_number(string): return float(string)
 
 print(string_to_number("3.14"))  
@@ -454,7 +454,7 @@ print(string_to_number("3.14"))
 ### 38. Marathon Distance Checker
 The ```marathon_distance``` function helps Mary determine if the marathon she wants to run is exactly 25 miles long by analyzing the lengths listed in small portions on the sign-up sheet. It returns true if the total distance matches 25 miles, otherwise, it returns false.
 
-```
+```python
 def marathon_distance(distances): return sum(map(abs, distances)) == 25
 
 distances = [1, 2, -3, 4, 5, -6, 7, 8, -9, 10]
@@ -465,7 +465,7 @@ print(marathon_distance(distances))
 ### 39. Count the Number of Words in a String
 The ```count_words``` function counts the number of words in a given string.
 
-```
+```python
 def count_words(string): return len(string.split())
 
 print(count_words("Hello world, how are you?"))  
@@ -475,7 +475,7 @@ print(count_words("Hello world, how are you?"))
 ### 40. Count Ones in Binary Representation
 The ```count_ones``` function counts the number of ones in the binary representation of an integer.
 
-```
+```python
 def count_ones(n): return bin(n).count('1')
 
 result = count_ones(12)
@@ -486,7 +486,7 @@ print(result)
 ### 41. Get the Current Year
 The ```current_year``` function returns the current year as an integer. 
 
-```
+```python
 from datetime import datetime
 
 def current_year(): return datetime.now().year
@@ -498,7 +498,7 @@ print(current_year())
 ### 42. Generate a Random Number between 1 and 10
 The ```random_1_to_10``` function generates a random integer between 1 and 10 (inclusive) using the rand method with a range of 1 to 10.
 
-```
+```python
 import random
 
 def random_1_to_10(): return random.randint(1, 10)
@@ -510,7 +510,7 @@ print(random_1_to_10())
 ### 43. Check if a String is Empty
 The ```empty_string``` function checks if a string is empty.
 
-```
+```python
 def empty_string(string): return not string.strip()
 
 print(empty_string(""))  
@@ -522,7 +522,7 @@ print(empty_string("Hello, world!"))
 ### 44. Sum of Index Multiplied Elements
 The ```index_multiplier``` function calculates the sum of all items in an array, where each item is multiplied by its index (zero-based). If the array is empty, it returns 0.
 
-```
+```python
 def index_multiplier(arr): return sum(value * index for index, value in enumerate(arr))
 
 arr = [1, 2, 3, 4, 5]
@@ -533,7 +533,7 @@ print(index_multiplier(arr))
 ### 45. Calculate Progress Days
 The ```progress_days``` function calculates the total number of progress days based on an array of miles run every Saturday.
 
-```
+```python
 def progress_days(runs): return sum(runs[i] < runs[i + 1] for i in range(len(runs) - 1))
 
 runs = [3, 4, 1, 2, 4, 5]
@@ -544,7 +544,7 @@ print(progress_days(runs))
 ### 46. Check if a Number is a Multiple of 5
 The ```is_multiple_of_5``` function checks if a given number is a multiple of 5. 
 
-```
+```python
 def is_multiple_of_5(num): return num % 5 == 0
 
 print(is_multiple_of_5(10))  
@@ -556,7 +556,7 @@ print(is_multiple_of_5(7))
 ### 47. Convert Minutes to Seconds
 The ```mins_to_secs``` convert minutes to seconds. It takes a number representing minutes (mins) as input and returns the equivalent number of seconds by multiplying the number of minutes by 60.
 
-```
+```python
 def mins_to_secs(mins): return mins * 60
 
 print(mins_to_secs(5))  
@@ -566,7 +566,7 @@ print(mins_to_secs(5))
 ### 48. Find the Maximum Value in an Array of Objects
 The ```FindMaxValue``` function finds the maximum value in an array of objects.
 
-```
+```python
 def find_max_value(arr, key):
     return max(item[key] for item in arr)
 
@@ -584,7 +584,7 @@ print(find_max_value(arr, "score"))
 ### 49. Check if a String starts with a specific character
 The ```starts_with_char``` function checks if a given string starts with a specific character.
 
-```
+```python
 def starts_with_char(string, char):
     return string.lower().startswith(char.lower())
 
@@ -597,7 +597,7 @@ print(starts_with_char("Hello, world!", 'h'))
 ### 50. Convert DNA to RNA
 The ```dna_to_rna``` function takes a DNA sequence as input and converts it into its corresponding RNA sequence.
 
-```
+```python
 def dna_to_rna(dna):
     conversion = {'A': 'U', 'T': 'A', 'C': 'G', 'G': 'C'}
     return ''.join(conversion.get(base, '') for base in dna)
@@ -609,7 +609,7 @@ print(dna_to_rna("ATTGC"))
 ### 51. Check if an array contains a specific value
 The ```contains_value``` function checks if a given array contains a specific value.
 
-```
+```python
 def contains_value(arr, value):
     return value in arr
 
@@ -623,7 +623,7 @@ print(contains_value([1, 2, 3, 4, 5], 6))
 ### 52. Convert an array to a comma-separated string
 The ```array_to_csv``` function converts an array to a comma-separated string. 
 
-```
+```python
 def array_to_csv(arr):
     return ', '.join(map(str, arr))
 
