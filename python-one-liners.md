@@ -635,7 +635,7 @@ print(array_to_csv([1, 2, 3, 4, 5]))
 ### 53. Check if a Year is a Leap Year
 The ```is_leap_year``` function takes a year as input and returns true if it's a leap year and false otherwise.
 
-```
+```python
 def is_leap_year(year):
     return (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
 
@@ -649,7 +649,7 @@ print(is_leap_year(2023))
 ### 54. Find the Index of an Element in an Array
 The ```find_index``` function finds the index of an element in an array.
 
-```
+```python
 def find_index(arr, element):
     try:
         return arr.index(element)
@@ -665,7 +665,7 @@ print(find_index(fruits, "orange"))
 ### 55. Convert Minutes to Hours and Minutes
 The ```mins_to_hours_and_mins``` function convert minutes to hours and minutes.
 
-```
+```python
 def mins_to_hours_and_mins(mins):
     return f"{mins // 60} hours and {mins % 60} minutes"
 
@@ -677,7 +677,7 @@ print(mins_to_hours_and_mins(150))
 ### 56. Check if an Array is Sorted in Ascending Order
 The ```is_sorted_ascending``` function takes an array arr as input and checks if every element in the array is greater than or equal to the previous element, ensuring that the array is sorted in ascending order. 
 
-```
+```python
 def is_sorted_ascending(arr):
     return all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1))
 
@@ -691,7 +691,7 @@ print(is_sorted_ascending([1, 5, 3, 8, 2]))
 ### 57. Remove a Specific Element from an Array
 The ```remove_element``` function removes a specific element from an array.
 
-```
+```python
 def remove_element(arr, element):
     return [x for x in arr if x != element]
 
@@ -704,7 +704,7 @@ print(result)
 ### 58. Truncate a String to a Given Length
 The ```truncate_string``` function truncate a string to a given length. 
 
-```
+```python
 def truncate_string(s, max_length):
     return s[:max_length] + '...' if len(s) > max_length else s
 
@@ -716,7 +716,7 @@ print(truncate_string("Hello, world!", 5))
 ### 59. Convert Video Length from Minutes to Seconds
 The ```minutes_to_seconds``` function takes the length of a video in the format "mm:ss" and converts it into seconds.
 
-```
+```python
 def minutes_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(time.split(':'))))
 
@@ -728,7 +728,7 @@ print(minutes_to_seconds("02:54"))
 ### 60. Find the Difference between Two Dates in Days
 The ```DateDifferenceInDays``` function finds the difference between two dates in days.
 
-```
+```python
 from datetime import datetime
 
 def DateDifferenceInDays(date1, date2):
@@ -741,9 +741,10 @@ print(DateDifferenceInDays(startDate, endDate))
 # Output: 9
 ```
 
-61. Check if a String is a Valid Email Address
+### 61. Check if a String is a Valid Email Address
 The IsValidEmail function returns true if the email string matches the pattern, and false otherwise.
 
+```python
 import re
 
 def IsValidEmail(email):
@@ -754,10 +755,7 @@ print(IsValidEmail("user@example.com"))
 # True
 print(IsValidEmail("invalid-email"))      
 # False
-
-
-
-
+```
  
 62. Convert Seconds to Minutes and Seconds
 The SecsToMinsAndSecs function calculate the number of minutes and remaining seconds and then returns a formatted string containing the result.
