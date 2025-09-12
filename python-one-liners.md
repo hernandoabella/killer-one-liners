@@ -883,9 +883,10 @@ print(GetMonthName(date))
 # Output: August
 ```
  
-71. Find the Bomb
+### 71. Find the Bomb
 The Bomb function searches for the word "bomb" in a given string. If the word is found, it returns "Duck!!!", indicating a potential danger. Otherwise, it returns "There is no bomb, relax.", reassuring that there is no threat.
 
+```pyhon
 import re
 
 def Bomb(s):
@@ -895,29 +896,24 @@ def Bomb(s):
 s = "The bomb is about to explode."
 print(Bomb(s))
 # Output: Duck!!!
-
-
-
-
-
+```
  
-72. Convert Feet to Meters
+### 72. Convert Feet to Meters
 The FeetToMeters function converts a given length from feet to meters.
 
+```python
 def FeetToMeters(feet):
     return feet * 0.3048
 
 # Example usage
 print(FeetToMeters(10))
 # Output: 3.048
+```
 
-
-
-
- 
-73. Check if a Number is a Perfect Square
+### 73. Check if a Number is a Perfect Square
 The IsPerfectSquare function checks if a given number is a perfect square.
 
+```
 def IsPerfectSquare(num):
     sqrt = num ** 0.5
     return sqrt.is_integer()
@@ -927,15 +923,12 @@ print(IsPerfectSquare(16))
 # Output: True
 print(IsPerfectSquare(10)) 
 # Output: False
+```
 
-
-
-
-
- 
-74. Check if a String contains only Numbers
+### 74. Check if a String contains only Numbers
 The ContainsOnlyNumbers function checks if a given string contains only numeric characters.
 
+```python
 import re
 
 def ContainsOnlyNumbers(s):
@@ -946,14 +939,12 @@ print(ContainsOnlyNumbers("12345"))
 # Output: True
 print(ContainsOnlyNumbers("12a34")) 
 # Output: False
+```
 
-
-
-
- 
-75. Get the Current Month (0-based index)
+### 75. Get the Current Month (0-based index)
 The CurrentMonth retrieves the current month as a 0-based index.
 
+```python
 from datetime import datetime
 
 def CurrentMonth():
@@ -962,14 +953,12 @@ def CurrentMonth():
 # Example usage
 print(CurrentMonth()) 
 # Output: 3 is the current month (0-based index)
+```
 
-
-
-
- 
-76. Century from Year
+### 76. Century from Year
 The CenturyFromYear function calculates the century corresponding to a given year. It takes a year as input and returns its corresponding century.
 
+```python
 def CenturyFromYear(year):
     return (year + 99) // 100
 
@@ -979,17 +968,12 @@ print(CenturyFromYear(1700))  # Output: 17
 print(CenturyFromYear(1988))  # Output: 20
 print(CenturyFromYear(2000))  # Output: 20
 print(CenturyFromYear(2001))  # Output: 21
+```
 
-
-
-
-
-
-
- 
-77. Check if a Number is a Prime Number
+### 77. Check if a Number is a Prime Number
 The IsPrime function checks if a given number is prime.
 
+```
 def IsPrime(num):
     return num > 1 and all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))
 
@@ -998,15 +982,12 @@ print(IsPrime(13))
 # Output: True
 print(IsPrime(4))   
 # Output: False
+```
 
-
-
-
-  
- 
-78. Get the Last N Elements of an Array
+### 78. Get the Last N Elements of an Array
 The LastNElements function retrieves the last n elements of an array.
 
+```python
 def LastNElements(arr, n):
     return arr[-n:]
 
@@ -1014,16 +995,12 @@ def LastNElements(arr, n):
 result = LastNElements([1, 2, 3, 4, 5], 3)
 print(", ".join(map(str, result)))  
 # Output: 3, 4, 5
+```
 
-
-
-
-
-
- 
-79. Convert Degrees to Radians
+### 79. Convert Degrees to Radians
 The DegToRad function converts an angle in degrees to radians.
 
+```python
 import math
 
 def DegToRad(degrees):
@@ -1032,12 +1009,8 @@ def DegToRad(degrees):
 # Example usage
 print(DegToRad(90))  
 # Output: 1.5707963267948966
+```
 
-
-
-
-
- 
 80. Binary Letter Converter
 The ConvertBinary function transforms all letters from 'a' to 'm' to 0 and letters from 'n' to 'z' to 1 in a given string.
 
@@ -4277,7 +4250,7 @@ print(f"Area of the kite: {area_of_kite(10, 6)}")
 
 
  
-264. Calculate the Area of a Sector
+### 264. Calculate the Area of a Sector
 The sector_area function calculates the area of a sector within a circle based on the provided radius and angle.
 
 import math
@@ -4288,5 +4261,3 @@ def sector_area(radius, angle):
 # Test case
 print(f"Area of the sector: {sector_area(5, 60)}")
 # Output: Area of the sector: 5.235987755982989
-
-Made with ❤️ & ☕by [Hernando Abella](https://www.github.com/hernandoabella)
