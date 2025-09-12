@@ -757,24 +757,22 @@ print(IsValidEmail("invalid-email"))
 # False
 ```
  
-62. Convert Seconds to Minutes and Seconds
+### 62. Convert Seconds to Minutes and Seconds
 The SecsToMinsAndSecs function calculate the number of minutes and remaining seconds and then returns a formatted string containing the result.
 
+```python
 def SecsToMinsAndSecs(seconds):
     return f"{seconds // 60} minutes and {seconds % 60} seconds"
 
 # Example usage
 print(SecsToMinsAndSecs(120)) 
 # Output: 2 minutes and 0 seconds
+```
 
-
-
-
-
- 
-63. Generate a Fibonacci Sequence
+### 63. Generate a Fibonacci Sequence
 The Fibonacci generates a Fibonacci sequence.
 
+```python
 def Fibonacci(n):
     return n if n <= 1 else Fibonacci(n - 1) + Fibonacci(n - 2)
 
@@ -782,14 +780,12 @@ def Fibonacci(n):
 fibonacci_sequence = [Fibonacci(i) for i in range(8)]
 print(', '.join(map(str, fibonacci_sequence)))  
 # Output: 0, 1, 1, 2, 3, 5, 8, 13
+```
 
-
-
-
- 
-64. Spell Out a Word
+### 64. Spell Out a Word
 The Spelling function takes a word as input and spells it out by consecutively adding letters until the full word is completed. It then returns an array containing each step of the spelling process.
 
+```python
 def Spelling(word):
     return [word[:i+1] for i in range(len(word))]
 
@@ -798,15 +794,12 @@ word = "example"
 spelled_word = Spelling(word)
 print(", ".join(spelled_word))  
 # Output: e, ex, exa, exam, examp, exampl, example
+```
 
-
-
-
-
- 
-65. Check if an Array contains only Unique Values
+### 65. Check if an Array contains only Unique Values
 The HasUniqueValues function converts the array arr to a set using uniq, which removes duplicate elements. 
 
+```python
 def HasUniqueValues(arr):
     return len(set(arr)) == len(arr)
 
@@ -815,15 +808,12 @@ print(HasUniqueValues([1, 2, 3, 4, 5]))
 # Output: True
 print(HasUniqueValues([1, 2, 3, 4, 4]))  
 # Output: False
+```
 
-
-
-
-
- 
-66. Get the Day of the Week from a Date
+### 66. Get the Day of the Week from a Date
 The GetDayOfWeek function get the day of the week from a date.
 
+```python
 from datetime import datetime
 
 def GetDayOfWeek(date_str):
@@ -833,15 +823,12 @@ def GetDayOfWeek(date_str):
 # Example usage
 print(GetDayOfWeek("2023-08-02"))  
 # Output: Wednesday
+```
 
-
-
-
-  
- 
-67. Check if a Number is a Power of Two
+### 67. Check if a Number is a Power of Two
 The IsPowerOfTwo function checks whether a given number is a power of two using bitwise operations. 
 
+```python
 def IsPowerOfTwo(num):
     return num & (num - 1) == 0
 
@@ -850,13 +837,12 @@ print(IsPowerOfTwo(16))
 # Output: True (16 is 2^4)
 print(IsPowerOfTwo(5))   
 # Output: False
-
-
-
+```
  
-68. Generate multiplication table
+### 68. Generate multiplication table
 The GenerateMultiplicationTable function creates a multiplication table of a specified size. 
 
+```python
 def GenerateMultiplicationTable(size):
     table = [[(row + 1) * (col + 1) for col in range(size)] for row in range(size)]
     return table
@@ -867,11 +853,12 @@ multiplicationTable = GenerateMultiplicationTable(size)
 
 for row in multiplicationTable:
     print(", ".join(map(str, row)))
+```
 
- 
-69. Shhh Whisperer
+### 69. Shhh Whisperer
 The Shhh function takes a sentence as input, removes all capital letters except for the first letter, wraps the sentence in double quotation marks, and adds ", whispered your friend." to the end.
 
+```python
 def Shhh(sentence):
     lowered = f'"{sentence[0].lower()}{sentence[1:].lower()}", whispered your friend.'
     return lowered
@@ -879,16 +866,12 @@ def Shhh(sentence):
 # Example usage
 print(Shhh("HELLO THERE"))
 # Output: "Hello there", whispered your friend.
+```
 
-
-
-
-
-
- 
-70. Get the Month Name from a Date
+### 70. Get the Month Name from a Date
 The GetMonthName function retrieves the name of the month from a given date.
 
+```python
 import datetime
 
 def GetMonthName(date):
@@ -898,10 +881,7 @@ def GetMonthName(date):
 date = datetime.datetime(2023, 8, 2)
 print(GetMonthName(date)) 
 # Output: August
-
-
-
-
+```
  
 71. Find the Bomb
 The Bomb function searches for the word "bomb" in a given string. If the word is found, it returns "Duck!!!", indicating a potential danger. Otherwise, it returns "There is no bomb, relax.", reassuring that there is no threat.
