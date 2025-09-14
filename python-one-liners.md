@@ -1180,6 +1180,7 @@ print(is_odd(4))
 ### 91. Calculate the Standard Deviation of an Array of Numbers
 The standard_deviation function calculates the standard deviation of an array of numbers.
 
+```python
 import math
 
 def standard_deviation(arr):
@@ -1190,15 +1191,12 @@ def standard_deviation(arr):
 # Example usage
 print(standard_deviation([1, 2, 3, 4, 5]))  
 # Output: 1.4142135623730951
-
-
-
-
-
+```
  
-92. Check if a String ends with a specific Substring
+### 92. Check if a String ends with a specific Substring
 The ends_with_substring function checks if a string ends with a specific substring.
 
+```python
 def ends_with_substring(string, substring):
     return string.endswith(substring)
 
@@ -1207,29 +1205,24 @@ print(ends_with_substring("Hello, world!", "world!"))
 # Output: True
 print(ends_with_substring("Hello, world!", "Hello"))   
 # Output: False
+``` 
 
-
-
-
-
- 
-93. Calculate the Sum of Squares of an Array
+### 93. Calculate the Sum of Squares of an Array
 The sum_of_squares function calculates the sum of squares of an array.
 
+```python
 def sum_of_squares(arr):
     return sum(x ** 2 for x in arr)
 
 # Example usage
 print(sum_of_squares([1, 2, 3, 4, 5]))  
 # Output: 55
-
-
-
-
+```
  
-94. Calculate PI to N Decimal Places
+### 94. Calculate PI to N Decimal Places
 The my_pi function takes an integer n and returns the mathematical constant PI to n decimal places.
 
+```python
 import math
 
 def my_pi(n):
@@ -1238,15 +1231,12 @@ def my_pi(n):
 # Example usage
 print(my_pi(5))  
 # Output: 3.14159
+``` 
 
-
-
-
-
- 
-95. Generate an Array of Random Numbers
+### 95. Generate an Array of Random Numbers
 The random_array function generates an array of random numbers.
 
+```python
 import random
 
 def random_array(length):
@@ -1256,29 +1246,24 @@ def random_array(length):
 random_numbers = random_array(5)
 print(random_numbers)  
 # Output: Array with 5 random numbers, e.g., [23, 45, 67, 11, 88]
+```
 
-
-
-
- 
-96. Join Path Portions
+### 96. Join Path Portions
 The join_path function receives two portions of a path and joins them using the "/" separator. If the separator is missing between the portions, it is added before joining.
 
+```python
 def join_path(portion1, portion2):
     return f"{portion1.rstrip('/')}/{portion2.lstrip('/')}"
     
 # Example usage
 print(join_path("portion1", "portion2")) 
 # Output: portion1/portion2
+```
 
-
-
-
-
- 
-97. Convert Seconds to Hours, Minutes, and Seconds
+### 97. Convert Seconds to Hours, Minutes, and Seconds
 The seconds_to_hours_mins_secs function convert seconds to hours, minutes, and remaining seconds.
 
+```python
 def seconds_to_hours_mins_secs(seconds):
     hours = seconds // 3600
     remaining_seconds = seconds % 3600
@@ -1290,15 +1275,12 @@ def seconds_to_hours_mins_secs(seconds):
 # Example usage
 print(seconds_to_hours_mins_secs(7320))
 # Output: "2 hours, 2 minutes, and 0 seconds"
+```
 
-
-
-
-
- 
-98. Simple calculator
+### 98. Simple calculator
 The calculator function calculates different operations.
 
+```python
 def calculator(num1, op, num2):
     return {'+': num1 + num2, '-': num1 - num2, '*': num1 * num2, '/': num1 / num2}[op]
 
@@ -1307,17 +1289,12 @@ print(calculator(5, '+', 3))    # Addition outputs: 8
 print(calculator(10, '-', 4))   # Subtraction outputs: 6
 print(calculator(6, '*', 2))    # Multiplication outputs: 12
 print(calculator(20, '/', 5))   # Division outputs: 4
+```
 
-
-
-
-
-
-
- 
-99. Find Nemo
+### 99. Find Nemo
 The find_nemo function function takes a string of words as input and searches for the word "Nemo". If "Nemo" is found, it returns a string indicating the position of "Nemo" in the sentence. If "Nemo" is not found, it returns a message indicating its absence.
 
+```python
 def find_nemo(sentence):
     words = sentence.split()
     index = words.index("Nemo") + 1 if "Nemo" in words else -1
@@ -1326,13 +1303,8 @@ def find_nemo(sentence):
 # Example usage
 print(find_nemo("I am finding Nemo"))  
 # I found Nemo at 3!
+```
 
-
-
-
-
-
- 
 100. Count the occurrences of a character in a String
 The count_occurrences function counts the occurrences of a character in a String.
 
