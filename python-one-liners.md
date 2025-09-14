@@ -1011,9 +1011,10 @@ print(DegToRad(90))
 # Output: 1.5707963267948966
 ```
 
-80. Binary Letter Converter
+### 80. Binary Letter Converter
 The ConvertBinary function transforms all letters from 'a' to 'm' to 0 and letters from 'n' to 'z' to 1 in a given string.
 
+```python
 def ConvertBinary(s):
     return ''.join(['0' if 'a' <= c <= 'm' else '1' for c in s.lower()])
 
@@ -1024,17 +1025,12 @@ print(ConvertBinary("world"))
 # Output: 11111
 print(ConvertBinary("abcxyz"))  
 # Output: 000111
-
-
-
-
-
-
-  
+```
  
-81. Find the Intersection of Two Arrays
+### 81. Find the Intersection of Two Arrays
 The FindIntersection function finds the intersection of two arrays.
 
+```python
 def FindIntersection(arr1, arr2):
     return list(set(arr1) & set(arr2))
 
@@ -1044,13 +1040,12 @@ arr2 = [2, 3, 4]
 intersection = FindIntersection(arr1, arr2)
 print(intersection)  
 # Output: [2, 3]
-
-
-
+```
  
-82. Convert Days to Years, Months, and Days
+### 82. Convert Days to Years, Months, and Days
 The DaysToYearsMonthsDays function converts a given number of days to years, months, and remaining days.
 
+```python
 def DaysToYearsMonthsDays(days):
     years = days // 365
     months = (days % 365) // 30
@@ -1060,15 +1055,12 @@ def DaysToYearsMonthsDays(days):
 # Example usage
 print(DaysToYearsMonthsDays(1000))  
 # Output: 2 years, 9 months, and 5 days
+```
 
-
-
-
-
- 
-83. Check if an Object is Empty
+### 83. Check if an Object is Empty
 The IsEmptyObject function checks if a given object has no own properties.
 
+```python
 def IsEmptyObject(obj):
     return len(obj) == 0
 
@@ -1076,15 +1068,12 @@ def IsEmptyObject(obj):
 print(IsEmptyObject({}))  # Output: True
 print(IsEmptyObject({"name": "John", "age": 30}))  
 # Output: False
+```
 
-
-
-
-
- 
-84. Count Decimal Places
+### 84. Count Decimal Places
 The GetDecimalPlaces function takes a number represented as a string and returns the number of decimal places it has. If the number has no decimal places, it returns 0.
 
+```python
 def GetDecimalPlaces(num):
     if "." in num:
         return len(num.split(".")[1])
@@ -1100,33 +1089,24 @@ print(GetDecimalPlaces("10.000"))
 # Output: 3
 print(GetDecimalPlaces("32"))       
 # Output: 0
-
-
-
-
-
+```
  
-85. Remove Whitespace from a String
+### 85. Remove Whitespace from a String
 The RemoveWhitespace function removes all whitespace characters from a given string.
 
+```python
 def RemoveWhitespace(str):
     return "".join(str.split())
 
 # Example usage
 print(RemoveWhitespace("  Hello,  world!  "))  
 # Output: Hello,world!
+```
 
-
-
-
-
-
-
-
- 
-86. Find the Difference between Two Arrays
+### 86. Find the Difference between Two Arrays
 The ArrayDifference function finds the difference between two arrays.
 
+```python
 def ArrayDifference(arr1, arr2):
     return list(set(arr1) - set(arr2))
 
@@ -1136,16 +1116,12 @@ arr2 = [2, 3, 4]
 difference = ArrayDifference(arr1, arr2)
 print(", ".join(map(str, difference)))  
 # Output: 1
-
-
-
-
-
-
+```
  
-87. Check if a Number is a Fibonacci Number
+### 87. Check if a Number is a Fibonacci Number
 The IsFibonacci function checks if a number is a Fibonacci number.
 
+```python
 def IsFibonacci(num):
     return IsPerfectSquare(5 * num * num + 4) or IsPerfectSquare(5 * num * num - 4)
 
@@ -1158,15 +1134,12 @@ print(IsFibonacci(5))
 # True
 print(IsFibonacci(6))  
 # False
-
-
-
-
-
+```
  
-88. Convert Hours to Minutes
+### 88. Convert Hours to Minutes
 The HoursToMinutes function takes a parameter hours and returns the equivalent number of minutes by multiplying hours by 60.
 
+```python
 def HoursToMinutes(hours):
     # Multiply hours by 60 to get the equivalent number of minutes
     return hours * 60
@@ -1174,15 +1147,12 @@ def HoursToMinutes(hours):
 # Example usage
 print(HoursToMinutes(2))  
 # Output: 120
+```
 
-
-
-
-
- 
-89. Get the First N Elements of an Array
+### 89. Get the First N Elements of an Array
 The FirstNElements function get the first n elements of an array.
 
+```python
 def FirstNElements(arr, n):
     # Use list slicing to retrieve the first n elements of the array
     return arr[:n]
@@ -1192,13 +1162,9 @@ array = [1, 2, 3, 4, 5]
 first_n_elements = FirstNElements(array, 3)
 print(", ".join(map(str, first_n_elements)))  
 # Output: 1, 2, 3
-
-
-
-
-
+```
  
-90. Check if a Number is Odd
+### 90. Check if a Number is Odd
 The is_odd function checks if a number is odd. 
 
 def is_odd(num):
@@ -1209,12 +1175,9 @@ print(is_odd(5))
 # Output: True
 print(is_odd(4))  
 # Output: False
-
-
-
-
+```
  
-91. Calculate the Standard Deviation of an Array of Numbers
+### 91. Calculate the Standard Deviation of an Array of Numbers
 The standard_deviation function calculates the standard deviation of an array of numbers.
 
 import math
