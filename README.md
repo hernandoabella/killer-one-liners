@@ -1,6 +1,6 @@
 ![GitHub Banners](https://github.com/user-attachments/assets/ac85694c-779a-4d4f-ae22-3c2db82c5c81)
 
-### Select your language:
+### Select Language:
 - [Python](./python-one-liners.md)
 - [JavaScript](./javascript-one-liners.md)
 - [TypeScript](./typescript-one-liners.md)
