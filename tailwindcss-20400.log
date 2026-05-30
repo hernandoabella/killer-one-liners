@@ -641,3 +641,37 @@
 2026-05-30T02:24:39.986733Z  INFO get_files: tailwindcss_oxide::scanner: exit
 2026-05-30T02:24:39.986781Z  INFO get_globs: tailwindcss_oxide::scanner: enter
 2026-05-30T02:24:39.986788Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.150787Z  INFO discover_sources: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.150812Z  INFO discover_sources:walk_parallel: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.157690Z  INFO discover_sources:walk_parallel: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.158369Z  INFO discover_sources: tailwindcss_oxide::scanner: Reading "G:\\GitHub\\killer-one-liners\\README.md"
+2026-05-30T02:25:04.158388Z  INFO discover_sources: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.158395Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.158399Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.158403Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.158585Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.158601Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.158629Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.158862Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.158868Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.158871Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.158949Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:04.158998Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:04.159003Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.051576Z  INFO discover_sources: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.051608Z  INFO discover_sources:walk_parallel: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.058207Z  INFO discover_sources:walk_parallel: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.058817Z  INFO discover_sources: tailwindcss_oxide::scanner: Reading "G:\\GitHub\\killer-one-liners\\README.md"
+2026-05-30T02:25:10.058833Z  INFO discover_sources: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.058838Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.058842Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.058846Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.058985Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.058998Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.059034Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.059298Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.059312Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.059318Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.059391Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-05-30T02:25:10.059446Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-05-30T02:25:10.059453Z  INFO get_globs: tailwindcss_oxide::scanner: exit
