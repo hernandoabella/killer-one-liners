@@ -36,7 +36,6 @@ interface Book {
   author: string;
   image: string;
   amazonLink: string;
-  gumroadLink: string;
 }
 
 // ─── Books Data (from your GitHub) ───────────────────────────────────────
@@ -47,40 +46,35 @@ const booksData: Book[] = [
     title: "250+ Killer JavaScript One-Liners",
     author: "Hernando Abella",
     image: "/250-killer-js.jpg",
-    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D442PCLX/",
-    gumroadLink: "https://hernandoabella.gumroad.com/l/oqsrp"
+    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CN51HJQQ"
   },
   {
     id: 2,
     title: "250+ Killer Python One-Liners",
     author: "Hernando Abella",
     image: "/250-killer-python.jpg",
-    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CN51HJQQ/",
-    gumroadLink: "https://hernandoabella.gumroad.com/l/rvfsne"
+    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D442PCLX"
   },
   {
     id: 3,
     title: "250+ Killer TypeScript One-Liners",
     author: "Hernando Abella",
     image: "/250-killer-ts.jpg",
-    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CYHZ5QKJ",
-    gumroadLink: "https://hernandoabella.gumroad.com/l/amuoc"
+    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CYHZ5QKJ"
   },
   {
     id: 4,
     title: "250+ Killer Ruby One-Liners",
     author: "Hernando Abella",
     image: "/250-killer-ruby.jpg",
-    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CXF57XT9",
-    gumroadLink: "https://hernandoabella.gumroad.com/l/rdfvl"
+    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CXF57XT9"
   },
   {
     id: 5,
     title: "250+ Killer C# One-Liners",
     author: "Hernando Abella",
     image: "/250-killer-csharp.jpg",
-    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D2ZM71J8",
-    gumroadLink: "https://hernandoabella.gumroad.com/l/rvfsne"
+    amazonLink: "https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D2ZM71"
   }
 ];
 
@@ -373,8 +367,6 @@ function OneLinerCard({ oneLiner, syntax }: { oneLiner: OneLiner; syntax: string
 }
 
 function BooksSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
-  const [purchaseType, setPurchaseType] = useState<"amazon" | "gumroad">("amazon");
-
   return (
     <>
       {isOpen && (
@@ -398,30 +390,6 @@ function BooksSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
             className="text-gray-400 hover:text-gray-600 transition"
           >
             <FiX size={20} />
-          </button>
-        </div>
-
-        {/* Purchase Type Selector */}
-        <div className="flex gap-2 p-4 border-b border-gray-200 bg-gray-50">
-          <button
-            onClick={() => setPurchaseType("amazon")}
-            className={`flex-1 px-3 py-1.5 text-sm rounded transition ${
-              purchaseType === "amazon"
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-            }`}
-          >
-            🇺🇸 Amazon
-          </button>
-          <button
-            onClick={() => setPurchaseType("gumroad")}
-            className={`flex-1 px-3 py-1.5 text-sm rounded transition ${
-              purchaseType === "gumroad"
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-            }`}
-          >
-            🚀 Gumroad
           </button>
         </div>
         
@@ -454,12 +422,12 @@ function BooksSidebar({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
                 </h3>
                 <p className="text-xs text-gray-500 mt-0.5">{book.author}</p>
                 <a
-                  href={purchaseType === "amazon" ? book.amazonLink : book.gumroadLink}
+                  href={book.amazonLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-3 inline-block w-full text-center px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded text-xs font-medium transition"
                 >
-                  {purchaseType === "amazon" ? "🇺🇸 Buy on Amazon →" : "🚀 Buy on Gumroad →"}
+                  🇺🇸 Buy on Amazon →
                 </a>
               </div>
             </div>
