@@ -1,17 +1,36 @@
-![GitHub Banners](https://github.com/user-attachments/assets/ac85694c-779a-4d4f-ae22-3c2db82c5c81)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### Select your language:
-- [Python](./python-one-liners.md)
-- [JavaScript](./javascript-one-liners.md)
-- [TypeScript](./typescript-one-liners.md)
-- [Ruby](./ruby-one-liners.md)
-- [C#](./c-sharp-one-liners.md)
+## Getting Started
 
-### Grab your copy here:
-| Language | Amazon | Gumroad |
-| ----------- | ----------- | --- |
-| <img src="https://github.com/user-attachments/assets/f845b136-cfe9-4f03-bd24-b22b573d0686" alt="python" width="30px"> | [https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D442PCLX/](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D442PCLX/) | [https://hernandoabella.gumroad.com/l/oqsrp](hernandoabella.gumroad.com/l/oqsrp) | 
-| <img src="https://github.com/user-attachments/assets/b3342b47-fe10-44af-9dc4-3f728bd625e5" alt="javascript" width="30px"> | [https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CN51HJQQ/](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CN51HJQQ/) | [https://hernandoabella.gumroad.com/l/rvfsne](hernandoabella.gumroad.com/l/rvfsne) | 
-| <img src="https://github.com/user-attachments/assets/db1a00cc-8bfd-44a8-82ec-31e50f8cfe81" alt="typescript" width="30px"> | [https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CYHZ5QKJ](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CYHZ5QKJ) | [https://hernandoabella.gumroad.com/l/amuoc](hernandoabella.gumroad.com/l/amuoc)  |
-| <img src="https://github.com/user-attachments/assets/3618d180-4c96-4cb2-9605-2d877cf3f25e" alt="ruby" width="30px"> | [https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CXF57XT9](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0CXF57XT9) | [https://hernandoabella.gumroad.com/l/rdfvl](hernandoabella.gumroad.com/l/rdfvl) |
-| <img src="https://github.com/user-attachments/assets/8a6147a9-a73c-44e0-8203-1058df68711e" alt="c-sharp" width="30px"> | [https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D2ZM71J8](https://www.amazon.com/-/es/Hernando-Abella-ebook/dp/B0D2ZM71J8) | [https://hernandoabella.gumroad.com/l/rvfsne](hernandoabella.gumroad.com/l/rvfsne) | 
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
